@@ -51,10 +51,17 @@ def save_price_to_excel(sku, price):
     new_data = pd.DataFrame([[date, sku, price]], columns=['Date', 'SKU', 'Price'])
 
     if os.path.exists(output_file):
-        book = load_workbook(output_file)
-        writer = pd.ExcelWriter(output_file, engine='openpyxl')
-        writer.book = book
-        writer.sheets = {ws.title: ws for ws in book.worksheets}
+        if os.path.getsize(output_file) == 0:
+            os.remove(output_file)
+            new_data.to_excel(output_file, index=False)
+            print(f"✅ Created fresh Excel file and saved price for {sku}")
+            return
+            book = load_workbook(output_file)
+        
+        with pd.ExcelWriter(output_file, engine='openpyxl', mode='a', if_sheet_exists='overlay') as writer:
+            new_data.to_excel(writer, sheet_name='Sheet1', index=False, header=False,
+        startrow=writer.sheets['Sheet1'].max_row)
+
         new_data.to_excel(writer, sheet_name='Sheet1', index=False, header=False,
                           startrow=writer.sheets['Sheet1'].max_row)
         writer.save()
