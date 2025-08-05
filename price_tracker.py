@@ -1,118 +1,159 @@
+import logging
+import time
+import random
 import pandas as pd
+from bs4 import BeautifulSoup
+import requests
+
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from openpyxl import load_workbook
-from datetime import datetime
-import time
-import os
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
 
-# -----------------------------
-# 1️⃣  Get Amazon Price
-# -----------------------------
-def get_amazon_price(url):
+# ---------- CONFIG ----------
+INPUT_PATH = "Scrapping Data.xlsx"
+OUTPUT_PATH = "Scraped_Product_Prices.xlsx"
+HEADLESS = True
+
+logging.basicConfig(
+    filename="scraper.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+# ---------- SELENIUM DRIVER ----------
+def init_driver():
     options = Options()
-    options.add_argument("--headless=new")  # Run without opening a browser window
-    options.add_argument("--disable-gpu")
+    if HEADLESS:
+        options.add_argument("--headless")
+        options.add_argument("--disable-gpu")
     options.add_argument("--window-size=1920,1080")
-    
-    driver = webdriver.Chrome(options=options)
-    driver.get(url)
-    time.sleep(2)  # Wait for page to load
-    
-    price = None
-    
+    options.add_argument("user-agent=Mozilla/5.0")
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    service = ChromeService(ChromeDriverManager().install())
+    return webdriver.Chrome(service=service, options=options)
+
+# ---------- REQUESTS HELPER ----------
+def fetch_page(url):
+    headers = {"User-Agent": "Mozilla/5.0"}
     try:
+        response = requests.get(url, headers=headers, timeout=10)
+        if response.status_code == 200:
+            return response.text
+    except Exception as e:
+        logging.warning(f"Requests failed: {url} — {e}")
+    return None
 
-       price = driver.find_element(By.ID, "priceblock_ourprice").text
+# ---------- INDIVIDUAL SCRAPER FUNCTIONS ----------
+def get_price_nykaa(url):
+    html = fetch_page(url)
+    if html:
+        soup = BeautifulSoup(html, "html.parser")
+        tag = soup.select_one(".css-14y2xde span.css-1jczs19")
+        if tag:
+            return tag.text.replace('₹', '').replace(',', '').strip()
+    return None
 
-    except:
-        try:
-            price = driver.find_element(By.ID, "priceblock_dealprice").text
-        except:
+def get_price_amazon_selenium(url):
+    driver = init_driver()
+    try:
+        driver.get(url)
+        wait = WebDriverWait(driver, 10)
+        for sel in [
+            (By.ID, "priceblock_ourprice"),
+            (By.ID, "priceblock_dealprice"),
+            (By.CSS_SELECTOR, "#centerCol .a-price-whole")
+        ]:
             try:
-                price = driver.find_element(By.CLASS_NAME, "a-price-whole").text
-                cents = driver.find_element(By.CLASS_NAME, "a-price-fraction").text
-                price = f"${price}.{cents}"
+                price = wait.until(EC.presence_of_element_located(sel)).text
+                return price.replace('₹', '').replace(',', '').strip()
             except:
-                print(f"⚠️  Price not found for URL: {url}")
+                continue
+    except Exception as e:
+        logging.error(f"Amazon error: {url} — {e}")
+    finally:
+        driver.quit()
+    return None
 
+def get_price_tira_selenium(url):
+    driver = init_driver()
+    try:
+        driver.get(url)
+        wait = WebDriverWait(driver, 10)
+        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "span.current-amount")))
+        return el.text.replace('₹', '').replace(',', '').strip()
+    except Exception as e:
+        logging.error(f"Tira error: {url} — {e}")
+    finally:
+        driver.quit()
+    return None
 
-    driver.quit()
-    return price
+def get_price_myntra_selenium(url):
+    driver = init_driver()
+    try:
+        driver.get(url)
+        wait = WebDriverWait(driver, 10)
+        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "span.pdp-price span")))
+        return el.text.replace('₹', '').replace(',', '').strip()
+    except Exception as e:
+        logging.error(f"Myntra error: {url} — {e}")
+    finally:
+        driver.quit()
+    return None
 
-# -----------------------------
-# 2️⃣  Save Price to Excel
-# -----------------------------
-def save_price_to_excel(sku, price):
-    date = datetime.today().strftime('%Y-%m-%d')
-    output_file = "daily_prices.xlsx"
-    new_data = pd.DataFrame([[date, sku, price]], columns=['Date', 'SKU', 'Price'])
+def get_price_blinkit_selenium(url):
+    driver = init_driver()
+    try:
+        driver.get(url)
+        wait = WebDriverWait(driver, 10)
+        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "span.Price__value")))
+        return el.text.replace('₹', '').replace(',', '').strip()
+    except Exception as e:
+        logging.error(f"Blinkit error: {url} — {e}")
+    finally:
+        driver.quit()
+    return None
 
-    if os.path.exists(output_file):
-        if os.path.getsize(output_file) == 0:
-            os.remove(output_file)
-            new_data.to_excel(output_file, index=False)
-            print(f"✅ Created fresh Excel file and saved price for {sku}")
-            return
-            book = load_workbook(output_file)
-        
-        with pd.ExcelWriter(output_file, engine='openpyxl', mode='a', if_sheet_exists='overlay') as writer:
-            new_data.to_excel(writer, sheet_name='Sheet1', index=False, header=False,
-        startrow=writer.sheets['Sheet1'].max_row)
+# ---------- STORE FUNCTION MAP ----------
+STORE_FUNCTIONS = {
+    'Nykaa Link': get_price_nykaa,
+    'Amazon Link': get_price_amazon_selenium,
+    'Myntra': get_price_myntra_selenium,
+    'Tira': get_price_tira_selenium,
+    'Blinkit': get_price_blinkit_selenium,
+}
 
-        new_data.to_excel(writer, sheet_name='Sheet1', index=False, header=False,
-                          startrow=writer.sheets['Sheet1'].max_row)
-        writer.save()
-    else:
-        new_data.to_excel(output_file, index=False)
-    print(f"✅ Saved {sku} price: {price}")
-
-# -----------------------------
-# 3️⃣  Compare Price Parity
-# -----------------------------
-def check_price_parity():
-    if not os.path.exists("daily_prices.xlsx"):
-        print("ℹ️ No previous price data found. Skipping parity check.")
-    return
-    df = pd.read_excel("daily_prices.xlsx")
-
-    latest = df.groupby('SKU').tail(2).sort_values(by=['SKU','Date'])
-
-    print("\n🔍 Price Parity Check:")
-    for sku in latest['SKU'].unique():
-        last_two = latest[latest['SKU'] == sku]['Price'].tolist()
-        if len(last_two) == 2:
-            yesterday, today = last_two
-            status = "Constant"
-            try:
-                yesterday_val = float(yesterday.replace('$', '').replace(',', ''))
-                today_val = float(today.replace('$', '').replace(',', ''))
-                if today_val > yesterday_val:
-                    status = "Increased"
-                elif today_val < yesterday_val:
-                    status = "Decreased"
-            except:
-                status = "Price format error"
-            print(f"{sku}: {status}")
-
-# -----------------------------
-# 4️⃣  Main Function
-# -----------------------------
+# ---------- MAIN RUNNER ----------
 def main():
-    products = pd.read_excel("products.xlsx")
-    for index, row in products.iterrows():
-        sku = row['SKU']
-        url = row['URL']
-        price = get_amazon_price(url)
-        if price:
-            save_price_to_excel(sku, price)
-    
-    check_price_parity()
+    df = pd.read_excel(INPUT_PATH)
+    output_df = df.copy()
 
-# -----------------------------
-# 5️⃣  Run Script
-# -----------------------------
+    for idx, row in output_df.iterrows():
+        sku = row.get("Sku Code", f"Row {idx+1}")
+        print(f"\n🔍 {sku}")
+        for col, scraper_func in STORE_FUNCTIONS.items():
+            url = row.get(col)
+            if isinstance(url, str) and url.startswith("http"):
+                print(f"  ⏳ {col} → ", end="")
+                try:
+                    price = scraper_func(url)
+                    if price:
+                        print(f"₹{price}")
+                        output_df.at[idx, col] = price
+                    else:
+                        print("N/A")
+                        output_df.at[idx, col] = "N/A"
+                except Exception as e:
+                    print("Error")
+                    logging.error(f"{col} failed for {url} — {e}")
+                    output_df.at[idx, col] = "Error"
+                time.sleep(random.uniform(1, 2))
+
+    output_df.to_excel(OUTPUT_PATH, index=False)
+    print(f"\n✅ Scraping complete! Results saved to: {OUTPUT_PATH}")
+
 if __name__ == "__main__":
     main()
