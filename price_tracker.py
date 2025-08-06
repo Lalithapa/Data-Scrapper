@@ -4,6 +4,8 @@ import random
 import pandas as pd
 from bs4 import BeautifulSoup
 import requests
+from dotenv import load_dotenv
+import os
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -21,11 +23,13 @@ OUTPUT_PATH = "Scraped_Product_Prices.xlsx"
 
 HEADLESS = True
 
+load_dotenv()
+
 # --- PROXY CONFIG ---
-PROXY_USERNAME = "hvxkcxys-rotate"
-PROXY_PASSWORD = "smvx89775mmq"
-PROXY_HOST = "p.webshare.io"
-PROXY_PORT = 80
+PROXY_USERNAME = os.getenv("PROXY_USERNAME")
+PROXY_PASSWORD = os.getenv("PROXY_PASSWORD")
+PROXY_HOST = os.getenv("PROXY_HOST")
+PROXY_PORT = os.getenv("PROXY_PORT")
 
 logging.basicConfig(
     filename="scraper.log",
