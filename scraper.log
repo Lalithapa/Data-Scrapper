@@ -1,0 +1,1114 @@
+2025-08-06 10:58:14,144 - INFO - ====== WebDriver manager ======
+2025-08-06 10:58:15,167 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:58:15,864 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:58:16,515 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:58:18,152 - INFO - WebDriver version 138.0.7204.183 selected
+2025-08-06 10:58:18,155 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2025-08-06 10:58:18,155 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2025-08-06 10:58:18,818 - INFO - Driver downloading response is 200
+2025-08-06 10:58:20,938 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:58:22,866 - INFO - Driver has been saved in cache [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183]
+2025-08-06 10:58:52,588 - INFO - ====== WebDriver manager ======
+2025-08-06 10:58:53,126 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:58:53,665 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:58:54,326 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 10:59:06,560 - ERROR - Myntra error: https://www.myntra.com/10861588/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 10:59:10,586 - INFO - ====== WebDriver manager ======
+2025-08-06 10:59:11,125 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:59:11,784 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:59:12,436 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 10:59:24,811 - ERROR - Tira error: https://www.tirabeauty.com/product/la-girl-pro-conceal-corrector-orange-8g-nisfy9w5bvs — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 10:59:28,341 - INFO - ====== WebDriver manager ======
+2025-08-06 10:59:28,876 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:59:29,400 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:59:30,051 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 10:59:47,519 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/504593/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 10:59:54,573 - INFO - ====== WebDriver manager ======
+2025-08-06 10:59:55,114 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:59:55,776 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 10:59:56,585 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:00:27,786 - INFO - ====== WebDriver manager ======
+2025-08-06 11:00:28,423 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:00:29,083 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:00:29,735 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:00:42,103 - ERROR - Myntra error: https://www.myntra.com/20615242/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:00:45,714 - INFO - ====== WebDriver manager ======
+2025-08-06 11:00:46,302 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:00:46,952 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:00:47,601 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:00:59,714 - ERROR - Tira error: https://www.tirabeauty.com/product/makeup-revolution-fix-glow-fixing-spray-100-ml-7605368 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:01:03,036 - INFO - ====== WebDriver manager ======
+2025-08-06 11:01:03,583 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:01:04,241 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:01:04,897 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:01:22,755 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/544928/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:01:28,967 - INFO - ====== WebDriver manager ======
+2025-08-06 11:01:29,558 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:01:30,206 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:01:31,064 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:02:00,881 - INFO - ====== WebDriver manager ======
+2025-08-06 11:02:01,428 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:02:02,238 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:02:02,893 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:02:15,327 - ERROR - Myntra error: https://www.myntra.com/11212894/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:02:19,265 - INFO - ====== WebDriver manager ======
+2025-08-06 11:02:19,821 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:02:20,471 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:02:21,126 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:02:33,336 - ERROR - Tira error: https://www.tirabeauty.com/product/makeup-revolution-the-icon-palette-enchanted-icon-8-4-g-7615083 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:02:36,406 - INFO - ====== WebDriver manager ======
+2025-08-06 11:02:36,999 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:02:37,650 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:02:38,306 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:02:56,460 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/520717/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:02:59,691 - INFO - ====== WebDriver manager ======
+2025-08-06 11:03:00,246 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:03:00,900 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:03:01,554 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:03:13,692 - ERROR - Myntra error: https://www.myntra.com/34882667/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:03:17,484 - INFO - ====== WebDriver manager ======
+2025-08-06 11:03:18,019 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:03:18,675 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:03:19,205 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:03:31,433 - ERROR - Tira error: https://www.tirabeauty.com/product/makeup-revolution-pout-bomb-plumping-gloss-rosewood-rose-pink-4-6-ml-7615088 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:03:38,448 - INFO - ====== WebDriver manager ======
+2025-08-06 11:03:39,154 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:03:39,682 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:03:40,334 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:04:20,863 - INFO - ====== WebDriver manager ======
+2025-08-06 11:04:21,414 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:04:22,070 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:04:22,725 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:04:35,108 - ERROR - Myntra error: https://www.myntra.com/14954048/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:04:38,297 - INFO - ====== WebDriver manager ======
+2025-08-06 11:04:38,847 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:04:39,500 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:04:40,156 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:04:52,447 - ERROR - Tira error: https://www.tirabeauty.com/product/makeup-revolution-streamline-waterline-eyeliner-pencil-brown-1-3g-7572797 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:04:58,621 - INFO - ====== WebDriver manager ======
+2025-08-06 11:04:59,188 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:04:59,838 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:05:00,648 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:05:32,776 - INFO - ====== WebDriver manager ======
+2025-08-06 11:05:33,322 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:05:34,130 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:05:34,786 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:05:47,174 - ERROR - Myntra error: https://www.myntra.com/2156656/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:05:50,867 - INFO - ====== WebDriver manager ======
+2025-08-06 11:05:51,406 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:05:52,062 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:05:52,719 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:06:04,996 - ERROR - Tira error: https://www.tirabeauty.com/product/makeup-revolution-re---loaded-eyeshadow-palette---velvet-rose-165g-jf0ylxhuc-7 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:06:11,567 - INFO - ====== WebDriver manager ======
+2025-08-06 11:06:12,125 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:06:12,937 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:06:13,592 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:06:25,986 - ERROR - Myntra error: https://www.myntra.com/15191878/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:06:31,950 - INFO - ====== WebDriver manager ======
+2025-08-06 11:06:32,515 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:06:33,169 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:06:33,979 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:07:05,571 - INFO - ====== WebDriver manager ======
+2025-08-06 11:07:06,116 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:07:06,772 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:07:07,297 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:07:19,562 - ERROR - Myntra error: https://www.myntra.com/2156491/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:07:22,638 - INFO - ====== WebDriver manager ======
+2025-08-06 11:07:23,214 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:07:23,743 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:07:24,399 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:07:36,763 - ERROR - Tira error: https://www.tirabeauty.com/product/la-girl-hd-pro-conceal-pure-beige-8g-y5eab4hoqvs — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 11:07:40,137 - INFO - ====== WebDriver manager ======
+2025-08-06 11:07:40,688 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:07:41,343 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 11:07:41,990 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 11:07:58,977 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/504592/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0xd2ba83+63395]
+	GetHandleVerifier [0x0xd2bac4+63460]
+	(No symbol) [0x0xb72113]
+	(No symbol) [0x0xbba85e]
+	(No symbol) [0x0xbbabfb]
+	(No symbol) [0x0xc02f92]
+	(No symbol) [0x0xbdf3f4]
+	(No symbol) [0x0xc007ba]
+	(No symbol) [0x0xbdf1a6]
+	(No symbol) [0x0xbae7b2]
+	(No symbol) [0x0xbaf654]
+	GetHandleVerifier [0x0xfa8883+2672035]
+	GetHandleVerifier [0x0xfa3cba+2652634]
+	GetHandleVerifier [0x0xd52bca+223466]
+	GetHandleVerifier [0x0xd42cb8+158168]
+	GetHandleVerifier [0x0xd4978d+185517]
+	GetHandleVerifier [0x0xd33b78+96408]
+	GetHandleVerifier [0x0xd33d02+96802]
+	GetHandleVerifier [0x0xd1e90a+9770]
+	BaseThreadInitThunk [0x0x75c85d49+25]
+	RtlInitializeExceptionChain [0x0x778cd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
+
+2025-08-06 12:01:51,293 - INFO - ====== WebDriver manager ======
+2025-08-06 12:01:51,879 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:01:52,713 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:01:53,529 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:02:28,205 - INFO - ====== WebDriver manager ======
+2025-08-06 12:02:28,758 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:02:29,413 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:02:30,074 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:03:04,105 - INFO - ====== WebDriver manager ======
+2025-08-06 12:03:04,657 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:03:05,186 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:03:05,991 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:03:39,447 - INFO - ====== WebDriver manager ======
+2025-08-06 12:03:40,003 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:03:40,692 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:03:41,345 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:04:25,425 - INFO - ====== WebDriver manager ======
+2025-08-06 12:04:25,967 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:04:26,623 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:04:27,299 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:05:04,273 - INFO - ====== WebDriver manager ======
+2025-08-06 12:05:04,817 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:05:05,474 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:05:06,007 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:09:17,161 - INFO - ====== WebDriver manager ======
+2025-08-06 12:09:17,725 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:09:18,388 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:09:19,198 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:09:52,805 - INFO - ====== WebDriver manager ======
+2025-08-06 12:09:53,377 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:09:54,031 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:09:54,685 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:10:27,660 - INFO - ====== WebDriver manager ======
+2025-08-06 12:10:28,229 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:10:28,883 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:10:29,406 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:11:04,634 - INFO - ====== WebDriver manager ======
+2025-08-06 12:11:05,189 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:11:05,845 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:11:06,500 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:11:50,692 - INFO - ====== WebDriver manager ======
+2025-08-06 12:11:51,250 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:11:51,781 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:11:52,433 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:12:30,676 - INFO - ====== WebDriver manager ======
+2025-08-06 12:12:31,240 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:12:32,050 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:12:32,579 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:13:07,893 - INFO - ====== WebDriver manager ======
+2025-08-06 12:13:08,455 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:13:09,104 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:13:09,759 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:13:42,634 - INFO - ====== WebDriver manager ======
+2025-08-06 12:13:43,196 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:13:43,847 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:13:44,496 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:14:22,106 - INFO - ====== WebDriver manager ======
+2025-08-06 12:14:22,653 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:14:23,307 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:14:23,965 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:14:57,154 - INFO - ====== WebDriver manager ======
+2025-08-06 12:14:57,709 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:14:58,237 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:14:58,891 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:15:31,078 - INFO - ====== WebDriver manager ======
+2025-08-06 12:15:31,625 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:15:32,277 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:15:32,963 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:16:08,219 - INFO - ====== WebDriver manager ======
+2025-08-06 12:16:08,788 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:16:09,313 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:16:09,969 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:16:44,109 - INFO - ====== WebDriver manager ======
+2025-08-06 12:16:44,689 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:16:45,214 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:16:46,020 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:17:20,626 - INFO - ====== WebDriver manager ======
+2025-08-06 12:17:21,174 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:17:21,704 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:17:22,514 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:17:56,981 - INFO - ====== WebDriver manager ======
+2025-08-06 12:17:57,538 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:17:58,194 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:17:58,848 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:18:33,184 - INFO - ====== WebDriver manager ======
+2025-08-06 12:18:33,786 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:18:34,439 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:18:35,101 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:19:09,996 - INFO - ====== WebDriver manager ======
+2025-08-06 12:19:10,547 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:19:11,200 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:19:11,859 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:19:45,193 - INFO - ====== WebDriver manager ======
+2025-08-06 12:19:45,785 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:19:46,592 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:19:47,244 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:20:21,738 - INFO - ====== WebDriver manager ======
+2025-08-06 12:20:22,283 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:20:22,938 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:20:23,595 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:20:58,996 - INFO - ====== WebDriver manager ======
+2025-08-06 12:20:59,537 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:21:00,349 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:21:00,882 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:21:36,601 - INFO - ====== WebDriver manager ======
+2025-08-06 12:21:37,160 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:21:37,819 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:21:38,475 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:22:14,105 - INFO - ====== WebDriver manager ======
+2025-08-06 12:22:14,645 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:22:15,298 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:22:15,826 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:22:51,047 - INFO - ====== WebDriver manager ======
+2025-08-06 12:22:51,596 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:22:52,127 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:22:52,782 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:23:26,228 - INFO - ====== WebDriver manager ======
+2025-08-06 12:23:26,781 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:23:27,310 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:23:27,840 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:24:01,019 - INFO - ====== WebDriver manager ======
+2025-08-06 12:24:01,563 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:24:02,239 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:24:02,768 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:24:36,026 - INFO - ====== WebDriver manager ======
+2025-08-06 12:24:36,576 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:24:37,233 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:24:37,888 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:25:11,949 - INFO - ====== WebDriver manager ======
+2025-08-06 12:25:12,511 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:25:13,320 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:25:13,976 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:25:49,149 - INFO - ====== WebDriver manager ======
+2025-08-06 12:25:49,695 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:25:50,353 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:25:51,160 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:26:31,289 - INFO - ====== WebDriver manager ======
+2025-08-06 12:26:31,854 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:26:32,384 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:26:33,068 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:27:20,841 - INFO - ====== WebDriver manager ======
+2025-08-06 12:27:21,394 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:27:22,050 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:27:22,703 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:27:55,475 - INFO - ====== WebDriver manager ======
+2025-08-06 12:27:56,029 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:27:56,678 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:27:57,324 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:28:29,692 - INFO - ====== WebDriver manager ======
+2025-08-06 12:28:30,270 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:28:30,922 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:28:31,574 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:29:06,321 - INFO - ====== WebDriver manager ======
+2025-08-06 12:29:06,878 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:29:07,563 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:29:08,219 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:29:49,607 - INFO - ====== WebDriver manager ======
+2025-08-06 12:29:50,179 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:29:50,836 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:29:51,490 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:30:36,185 - INFO - ====== WebDriver manager ======
+2025-08-06 12:30:36,741 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:30:37,398 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:30:38,057 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:31:11,213 - INFO - ====== WebDriver manager ======
+2025-08-06 12:31:11,819 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:31:12,473 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:31:13,124 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:31:47,924 - INFO - ====== WebDriver manager ======
+2025-08-06 12:31:48,477 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:31:49,287 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:31:49,942 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:32:23,277 - INFO - ====== WebDriver manager ======
+2025-08-06 12:32:23,827 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:32:24,481 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:32:25,132 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:33:01,901 - INFO - ====== WebDriver manager ======
+2025-08-06 12:33:02,476 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:33:03,137 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:33:03,950 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:33:43,747 - INFO - ====== WebDriver manager ======
+2025-08-06 12:33:44,309 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:33:44,965 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:33:45,494 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:34:21,206 - INFO - ====== WebDriver manager ======
+2025-08-06 12:34:21,823 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:34:22,475 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:34:23,125 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:34:57,850 - INFO - ====== WebDriver manager ======
+2025-08-06 12:34:58,400 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:34:59,053 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:34:59,705 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:35:31,923 - INFO - ====== WebDriver manager ======
+2025-08-06 12:35:32,476 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:35:33,288 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:35:33,941 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:36:17,533 - INFO - ====== WebDriver manager ======
+2025-08-06 12:36:18,076 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:36:18,889 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:36:19,548 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:36:53,816 - INFO - ====== WebDriver manager ======
+2025-08-06 12:36:54,387 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:36:55,037 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:36:55,682 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:37:30,531 - INFO - ====== WebDriver manager ======
+2025-08-06 12:37:31,133 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:37:31,786 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:37:32,435 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:38:11,362 - INFO - ====== WebDriver manager ======
+2025-08-06 12:38:11,909 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:38:12,567 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:38:13,383 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:38:56,049 - INFO - ====== WebDriver manager ======
+2025-08-06 12:38:56,635 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:38:57,293 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:38:57,945 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:39:27,464 - INFO - ====== WebDriver manager ======
+2025-08-06 12:39:28,124 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:39:28,773 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:39:29,480 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:40:16,804 - INFO - ====== WebDriver manager ======
+2025-08-06 12:40:17,363 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:40:18,178 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:40:18,854 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:40:52,278 - INFO - ====== WebDriver manager ======
+2025-08-06 12:40:52,829 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:40:53,516 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:40:54,328 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:41:31,920 - INFO - ====== WebDriver manager ======
+2025-08-06 12:41:32,472 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:41:33,167 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:41:34,023 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:42:08,322 - INFO - ====== WebDriver manager ======
+2025-08-06 12:42:08,875 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:42:09,531 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:42:10,185 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:42:42,951 - INFO - ====== WebDriver manager ======
+2025-08-06 12:42:43,530 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:42:44,182 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:42:44,839 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:43:20,422 - INFO - ====== WebDriver manager ======
+2025-08-06 12:43:20,984 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:43:21,795 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:43:22,448 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:43:58,134 - INFO - ====== WebDriver manager ======
+2025-08-06 12:43:58,723 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:43:59,376 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:44:00,029 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:44:38,106 - INFO - ====== WebDriver manager ======
+2025-08-06 12:44:38,730 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:44:39,379 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:44:40,034 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:45:14,387 - INFO - ====== WebDriver manager ======
+2025-08-06 12:45:15,003 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:45:15,525 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:45:16,055 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:46:00,830 - INFO - ====== WebDriver manager ======
+2025-08-06 12:46:01,396 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:46:02,050 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:46:02,702 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:46:40,337 - INFO - ====== WebDriver manager ======
+2025-08-06 12:46:40,917 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:46:41,441 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:46:42,096 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:47:21,039 - INFO - ====== WebDriver manager ======
+2025-08-06 12:47:21,594 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:47:22,119 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:47:22,775 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:47:57,034 - INFO - ====== WebDriver manager ======
+2025-08-06 12:47:57,594 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:47:58,255 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:47:58,908 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:48:45,662 - INFO - ====== WebDriver manager ======
+2025-08-06 12:48:46,241 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:48:46,894 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:48:47,549 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:49:33,154 - INFO - ====== WebDriver manager ======
+2025-08-06 12:49:33,702 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:49:34,511 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:49:35,158 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:50:16,660 - INFO - ====== WebDriver manager ======
+2025-08-06 12:50:17,238 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:50:17,891 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:50:18,426 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:50:51,790 - INFO - ====== WebDriver manager ======
+2025-08-06 12:50:52,384 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:50:53,033 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:50:53,688 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:51:29,314 - INFO - ====== WebDriver manager ======
+2025-08-06 12:51:29,889 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:51:30,538 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:51:31,189 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:52:20,953 - INFO - ====== WebDriver manager ======
+2025-08-06 12:52:21,551 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:52:22,073 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:52:22,725 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:52:54,963 - INFO - ====== WebDriver manager ======
+2025-08-06 12:52:55,569 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:52:56,224 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:52:56,750 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:53:45,054 - INFO - ====== WebDriver manager ======
+2025-08-06 12:53:45,615 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:53:46,269 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:53:46,795 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:54:22,012 - INFO - ====== WebDriver manager ======
+2025-08-06 12:54:22,570 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:54:23,096 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:54:23,631 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:55:00,244 - INFO - ====== WebDriver manager ======
+2025-08-06 12:55:00,811 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:55:01,351 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:55:01,877 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:55:41,973 - INFO - ====== WebDriver manager ======
+2025-08-06 12:55:42,522 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:55:43,176 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:55:43,831 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:56:19,142 - INFO - ====== WebDriver manager ======
+2025-08-06 12:56:19,714 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:56:20,362 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:56:20,891 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:56:55,613 - INFO - ====== WebDriver manager ======
+2025-08-06 12:56:56,179 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:56:56,989 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:56:57,518 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:57:49,824 - INFO - ====== WebDriver manager ======
+2025-08-06 12:57:50,385 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:57:51,035 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:57:51,692 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:58:25,161 - INFO - ====== WebDriver manager ======
+2025-08-06 12:58:25,770 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:58:26,296 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:58:26,824 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:59:00,956 - WARNING - Requests failed: https://www.nykaa.com/makeup-revolution-fast-base-contour-stick/p/6832681?productId=6832681&pps=1&skuId=6832630 — ('Connection aborted.', HTTPException('got more than 100 headers'))
+2025-08-06 12:59:02,600 - INFO - ====== WebDriver manager ======
+2025-08-06 12:59:03,144 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:59:03,798 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:59:04,460 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 12:59:45,262 - INFO - ====== WebDriver manager ======
+2025-08-06 12:59:45,824 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:59:46,388 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 12:59:47,047 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:00:19,585 - INFO - ====== WebDriver manager ======
+2025-08-06 13:00:20,156 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:00:20,966 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:00:21,639 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:01:17,468 - INFO - ====== WebDriver manager ======
+2025-08-06 13:01:18,097 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:01:18,803 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:01:19,457 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:01:57,114 - INFO - ====== WebDriver manager ======
+2025-08-06 13:01:57,756 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:01:58,569 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:01:59,274 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:02:34,267 - INFO - ====== WebDriver manager ======
+2025-08-06 13:02:34,848 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:02:35,377 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:02:35,903 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:03:12,143 - INFO - ====== WebDriver manager ======
+2025-08-06 13:03:12,722 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:03:13,372 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:03:14,020 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:03:53,167 - INFO - ====== WebDriver manager ======
+2025-08-06 13:03:53,746 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:03:54,397 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:03:55,051 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:04:27,717 - INFO - ====== WebDriver manager ======
+2025-08-06 13:04:28,292 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:04:28,942 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:04:29,593 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:05:29,224 - INFO - ====== WebDriver manager ======
+2025-08-06 13:05:29,807 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:05:30,334 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:05:30,991 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:06:11,575 - INFO - ====== WebDriver manager ======
+2025-08-06 13:06:12,144 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:06:12,797 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:06:13,451 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:06:48,973 - INFO - ====== WebDriver manager ======
+2025-08-06 13:06:49,547 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:06:50,231 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:06:50,887 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:07:30,534 - INFO - ====== WebDriver manager ======
+2025-08-06 13:07:31,109 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:07:31,772 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:07:32,424 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:08:17,311 - INFO - ====== WebDriver manager ======
+2025-08-06 13:08:17,855 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:08:18,511 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:08:19,170 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:08:53,732 - INFO - ====== WebDriver manager ======
+2025-08-06 13:08:54,285 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:08:55,089 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:08:55,753 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:09:30,762 - INFO - ====== WebDriver manager ======
+2025-08-06 13:09:31,330 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:09:31,984 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:09:32,521 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:10:10,806 - INFO - ====== WebDriver manager ======
+2025-08-06 13:10:11,364 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:10:12,027 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:10:12,563 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:10:46,062 - INFO - ====== WebDriver manager ======
+2025-08-06 13:10:46,694 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:10:47,349 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:10:48,005 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:11:29,098 - INFO - ====== WebDriver manager ======
+2025-08-06 13:11:29,656 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:11:30,305 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:11:30,841 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:12:09,938 - INFO - ====== WebDriver manager ======
+2025-08-06 13:12:10,492 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:12:11,143 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:12:11,954 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:12:47,634 - INFO - ====== WebDriver manager ======
+2025-08-06 13:12:48,188 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:12:49,560 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:12:50,218 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:13:30,275 - INFO - ====== WebDriver manager ======
+2025-08-06 13:13:30,822 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:13:31,476 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:13:32,131 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:14:09,400 - INFO - ====== WebDriver manager ======
+2025-08-06 13:14:09,949 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:14:10,483 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:14:11,169 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:14:49,152 - INFO - ====== WebDriver manager ======
+2025-08-06 13:14:49,702 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:14:50,356 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:14:51,166 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:15:27,905 - INFO - ====== WebDriver manager ======
+2025-08-06 13:15:28,453 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:15:28,982 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:15:29,515 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:16:08,533 - INFO - ====== WebDriver manager ======
+2025-08-06 13:16:09,083 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:16:09,749 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:16:10,279 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:16:46,108 - INFO - ====== WebDriver manager ======
+2025-08-06 13:16:46,713 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:16:47,370 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:16:48,028 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:17:28,552 - INFO - ====== WebDriver manager ======
+2025-08-06 13:17:29,111 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:17:29,769 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:17:30,298 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:18:23,680 - INFO - ====== WebDriver manager ======
+2025-08-06 13:18:24,767 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:18:25,574 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:18:26,247 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:19:15,957 - INFO - ====== WebDriver manager ======
+2025-08-06 13:19:16,546 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:19:17,198 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:19:17,844 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:19:59,232 - INFO - ====== WebDriver manager ======
+2025-08-06 13:19:59,799 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:20:00,322 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:20:00,846 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:20:36,474 - INFO - ====== WebDriver manager ======
+2025-08-06 13:20:37,022 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:20:37,678 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:20:38,332 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:21:11,392 - INFO - ====== WebDriver manager ======
+2025-08-06 13:21:11,933 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:21:12,462 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:21:13,119 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:21:59,276 - INFO - ====== WebDriver manager ======
+2025-08-06 13:21:59,863 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:22:00,511 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:22:01,056 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:22:38,634 - INFO - ====== WebDriver manager ======
+2025-08-06 13:22:39,308 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:22:39,957 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:22:40,616 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:23:23,636 - INFO - ====== WebDriver manager ======
+2025-08-06 13:23:24,213 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:23:24,869 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:23:25,522 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:24:20,089 - INFO - ====== WebDriver manager ======
+2025-08-06 13:24:20,642 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:24:21,448 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:24:22,104 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:25:08,138 - INFO - ====== WebDriver manager ======
+2025-08-06 13:25:08,693 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:25:09,347 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:25:09,875 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:25:59,208 - INFO - ====== WebDriver manager ======
+2025-08-06 13:25:59,766 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:26:00,289 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:26:00,826 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:26:39,050 - INFO - ====== WebDriver manager ======
+2025-08-06 13:26:39,607 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:26:40,263 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:26:41,074 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:27:22,364 - INFO - ====== WebDriver manager ======
+2025-08-06 13:27:22,917 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:27:23,443 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:27:24,101 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:28:07,852 - INFO - ====== WebDriver manager ======
+2025-08-06 13:28:08,448 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:28:09,098 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:28:09,747 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:28:54,988 - INFO - ====== WebDriver manager ======
+2025-08-06 13:28:55,629 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:28:56,158 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:28:56,690 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:29:40,796 - INFO - ====== WebDriver manager ======
+2025-08-06 13:29:41,373 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:29:42,185 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:29:42,873 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:30:26,923 - INFO - ====== WebDriver manager ======
+2025-08-06 13:30:27,503 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:30:28,152 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:30:28,675 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:31:09,036 - INFO - ====== WebDriver manager ======
+2025-08-06 13:31:09,621 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:31:10,278 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:31:10,939 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:32:19,528 - INFO - ====== WebDriver manager ======
+2025-08-06 13:32:20,089 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:32:20,741 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:32:21,549 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:33:48,600 - INFO - ====== WebDriver manager ======
+2025-08-06 13:33:49,189 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:33:49,845 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:33:50,657 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:34:34,611 - INFO - ====== WebDriver manager ======
+2025-08-06 13:34:35,196 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:34:35,850 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:34:36,507 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-06 13:35:20,600 - INFO - ====== WebDriver manager ======
+2025-08-06 13:35:21,176 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:35:21,832 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-06 13:35:22,489 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache

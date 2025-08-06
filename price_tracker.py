@@ -14,9 +14,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 # ---------- CONFIG ----------
-INPUT_PATH = "Scrapping Data.xlsx"
+INPUT_PATH = "products.xlsx"
 OUTPUT_PATH = "Scraped_Product_Prices.xlsx"
 HEADLESS = True
+
+# --- PROXY CONFIG ---
+PROXY_USERNAME = "hvxkcxys-rotate"
+PROXY_PASSWORD = "smvx89775mmq"
+PROXY_HOST = "p.webshare.io"
+PROXY_PORT = 80
 
 logging.basicConfig(
     filename="scraper.log",
@@ -38,9 +44,27 @@ def init_driver():
 
 # ---------- REQUESTS HELPER ----------
 def fetch_page(url):
-    headers = {"User-Agent": "Mozilla/5.0"}
+    # headers = {"User-Agent": "Mozilla/5.0"}
+    # try:
+    #     response = requests.get(url, headers=headers, timeout=10)
+    #     if response.status_code == 200:
+    #         return response.text
+    # except Exception as e:
+    #     logging.warning(f"Requests failed: {url} — {e}")
+    # return None
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        "Accept-Language": "en-US,en;q=0.9"
+    }
+
+    proxies = {
+        "http": f"http://{PROXY_USERNAME}:{PROXY_PASSWORD}@{PROXY_HOST}:{PROXY_PORT}",
+        "https": f"http://{PROXY_USERNAME}:{PROXY_PASSWORD}@{PROXY_HOST}:{PROXY_PORT}",
+    }
+
     try:
-        response = requests.get(url, headers=headers, timeout=10)
+        response = requests.get(url, headers=headers, proxies=proxies, timeout=10)
         if response.status_code == 200:
             return response.text
     except Exception as e:
@@ -83,7 +107,7 @@ def get_price_tira_selenium(url):
     try:
         driver.get(url)
         wait = WebDriverWait(driver, 10)
-        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "span.current-amount")))
+        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".product-cost-container #item_price")))
         return el.text.replace('₹', '').replace(',', '').strip()
     except Exception as e:
         logging.error(f"Tira error: {url} — {e}")
@@ -96,7 +120,7 @@ def get_price_myntra_selenium(url):
     try:
         driver.get(url)
         wait = WebDriverWait(driver, 10)
-        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "span.pdp-price span")))
+        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".pdp-discount-container span.pdp-price strong")))
         return el.text.replace('₹', '').replace(',', '').strip()
     except Exception as e:
         logging.error(f"Myntra error: {url} — {e}")
@@ -121,9 +145,9 @@ def get_price_blinkit_selenium(url):
 STORE_FUNCTIONS = {
     'Nykaa Link': get_price_nykaa,
     'Amazon Link': get_price_amazon_selenium,
-    'Myntra': get_price_myntra_selenium,
-    'Tira': get_price_tira_selenium,
-    'Blinkit': get_price_blinkit_selenium,
+    # 'Myntra': get_price_myntra_selenium,
+    # 'Tira': get_price_tira_selenium,
+    # 'Blinkit': get_price_blinkit_selenium,
 }
 
 # ---------- MAIN RUNNER ----------
