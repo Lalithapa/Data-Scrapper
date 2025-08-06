@@ -14,8 +14,11 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 # ---------- CONFIG ----------
-INPUT_PATH = "products.xlsx"
+INPUT_PATH = "products_new.xlsx"
 OUTPUT_PATH = "Scraped_Product_Prices.xlsx"
+# INPUT_PATH = "/content/drive/My Drive/ScraperProject/products.xlsx"
+# OUTPUT_PATH = "/content/drive/My Drive/ScraperProject/Scraped_Product_Prices.xlsx"
+
 HEADLESS = True
 
 # --- PROXY CONFIG ---
@@ -133,7 +136,7 @@ def get_price_blinkit_selenium(url):
     try:
         driver.get(url)
         wait = WebDriverWait(driver, 10)
-        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "span.Price__value")))
+        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".tw-flex.tw-items-center.tw-gap-1 .tw-text-400.tw-font-bold")))
         return el.text.replace('₹', '').replace(',', '').strip()
     except Exception as e:
         logging.error(f"Blinkit error: {url} — {e}")
@@ -145,21 +148,25 @@ def get_price_blinkit_selenium(url):
 STORE_FUNCTIONS = {
     'Nykaa Link': get_price_nykaa,
     'Amazon Link': get_price_amazon_selenium,
-    # 'Myntra': get_price_myntra_selenium,
-    # 'Tira': get_price_tira_selenium,
-    # 'Blinkit': get_price_blinkit_selenium,
+    'Myntra': get_price_myntra_selenium,
+    'Tira': get_price_tira_selenium,
+    'Blinkit': get_price_blinkit_selenium,
 }
 
 # ---------- MAIN RUNNER ----------
 def main():
     df = pd.read_excel(INPUT_PATH)
     output_df = df.copy()
+    
+    # idx = 0  # Only run for the first row
+    # row = output_df.iloc[idx]
 
     for idx, row in output_df.iterrows():
         sku = row.get("Sku Code", f"Row {idx+1}")
         print(f"\n🔍 {sku}")
         for col, scraper_func in STORE_FUNCTIONS.items():
             url = row.get(col)
+            # print(f" This  {url}")
             if isinstance(url, str) and url.startswith("http"):
                 print(f"  ⏳ {col} → ", end="")
                 try:
