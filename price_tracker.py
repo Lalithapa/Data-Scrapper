@@ -55,26 +55,37 @@ def init_driver():
 
     # Updating the driver initialization to use the latest Chrome options and ensure compatibility with CI environments.
     options = Options()
-
-    # Modern headless mode
     if HEADLESS:
-        options.add_argument("--headless=new")
-
-    # Stability flags for CI
+     options.add_argument("--headless")     # <-- classic headless
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
-    options.add_argument("user-agent=Mozilla/5.0")
     options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--lang=en-US")
+    options.add_argument("user-agent=Mozilla/5.0")
 
-    # Point to the Chrome binary installed by GitHub Actions
     chrome_bin = os.environ.get("CHROME_BIN")
     if chrome_bin:
         options.binary_location = chrome_bin
 
     service = ChromeService(ChromeDriverManager().install())
-    return webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(service=service, options=options)
+    driver.set_page_load_timeout(45)
+    driver.implicitly_wait(2)
+    return driver
+
+DEBUG_DIR = "debug"
+os.makedirs(DEBUG_DIR, exist_ok=True)
+
+def save_debug(driver, name):
+    """Save screenshot and HTML of the current page for debugging"""
+    try:
+        driver.save_screenshot(f"{DEBUG_DIR}/{name}.png")
+        with open(f"{DEBUG_DIR}/{name}.html", "w", encoding="utf-8") as f:
+            f.write(driver.page_source)
+    except Exception as e:
+        print("[debug] save failed:", e)
 
 # ---------- REQUESTS HELPER ----------
 def fetch_page(url):
@@ -121,17 +132,21 @@ def get_price_amazon_selenium(url):
         driver.get(url)
         wait = WebDriverWait(driver, 10)
         for sel in [
+            (By.CSS_SELECTOR, "#apex_desktop .a-price .a-offscreen"),
+            (By.CSS_SELECTOR, "#corePrice_feature_div .a-offscreen"),
+            (By.CSS_SELECTOR, ".a-price .a-offscreen"),
             (By.ID, "priceblock_ourprice"),
             (By.ID, "priceblock_dealprice"),
-            (By.CSS_SELECTOR, "#centerCol .a-price-whole")
         ]:
             try:
                 price = wait.until(EC.presence_of_element_located(sel)).text
+                save_debug(driver, "amazon_success")  # 📌 Save debug
                 return price.replace('₹', '').replace(',', '').strip()
             except:
                 continue
     except Exception as e:
         logging.error(f"Amazon error: {url} — {e}")
+        save_debug(driver, "amazon_error")  # 📌 Save debug
     finally:
         driver.quit()
     return None
@@ -142,9 +157,12 @@ def get_price_tira_selenium(url):
         driver.get(url)
         wait = WebDriverWait(driver, 10)
         el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".product-cost-container #item_price")))
+        save_debug(driver, "tire_success")  # 📌 Save debug
         return el.text.replace('₹', '').replace(',', '').strip()
     except Exception as e:
         logging.error(f"Tira error: {url} — {e}")
+        save_debug(driver, "tira_error")  # 📌 Save debug
+
     finally:
         driver.quit()
     return None
@@ -155,9 +173,12 @@ def get_price_myntra_selenium(url):
         driver.get(url)
         wait = WebDriverWait(driver, 10)
         el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".pdp-discount-container span.pdp-price strong")))
+        save_debug(driver, "myntra_success")  # 📌 Save debug
         return el.text.replace('₹', '').replace(',', '').strip()
     except Exception as e:
         logging.error(f"Myntra error: {url} — {e}")
+        save_debug(driver, "myntra_error")  # 📌 Save debug
+
     finally:
         driver.quit()
     return None
