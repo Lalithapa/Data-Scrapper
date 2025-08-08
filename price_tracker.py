@@ -26,7 +26,8 @@ OUTPUT_PATH = f"Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xls
 
 HEADLESS = True
 
-load_dotenv()
+# load_dotenv()
+load_dotenv(dotenv_path="AUTOMATION_PROXIES")
 
 # --- PROXY CONFIG ---
 PROXY_USERNAME = os.getenv("PROXY_USERNAME")
