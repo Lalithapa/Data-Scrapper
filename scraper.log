@@ -126,3 +126,482 @@ Stacktrace:
 	RtlInitializeExceptionChain [0x0x778cd1ab+107]
 	RtlGetAppContainerNamedObjectPath [0x0x778cd131+561]
 
+2025-08-07 13:54:05,837 - INFO - ====== WebDriver manager ======
+2025-08-07 13:54:09,481 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:54:10,380 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:54:11,109 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:54:12,905 - INFO - WebDriver version 138.0.7204.183 selected
+2025-08-07 13:54:12,907 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2025-08-07 13:54:12,907 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/138.0.7204.183/win32/chromedriver-win32.zip
+2025-08-07 13:54:13,637 - INFO - Driver downloading response is 200
+2025-08-07 13:54:15,859 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:54:17,508 - INFO - Driver has been saved in cache [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183]
+2025-08-07 13:54:49,421 - INFO - ====== WebDriver manager ======
+2025-08-07 13:54:49,989 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:54:50,720 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:54:51,606 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:55:05,332 - INFO - ====== WebDriver manager ======
+2025-08-07 13:55:05,923 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:55:06,636 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:55:07,525 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:55:19,827 - ERROR - Tira error: https://www.tirabeauty.com/product/lamel-all-in-one-lip-tinted-plumping-oil-403-watermelon-3-ml-7608196 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 13:55:23,896 - INFO - ====== WebDriver manager ======
+2025-08-07 13:55:24,476 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:55:25,191 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:55:25,902 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:55:43,651 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/625768/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 13:55:55,546 - INFO - ====== WebDriver manager ======
+2025-08-07 13:55:56,119 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:55:56,694 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:55:57,271 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:56:26,884 - INFO - ====== WebDriver manager ======
+2025-08-07 13:56:27,592 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:56:28,168 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:56:29,052 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:56:43,614 - INFO - ====== WebDriver manager ======
+2025-08-07 13:56:44,324 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:56:45,046 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:56:45,763 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:56:58,120 - ERROR - Tira error: https://www.tirabeauty.com/product/makeup-revolution-skin-silk-serum-foundation-f8-5-w-23-ml-7616487 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 13:57:02,093 - INFO - ====== WebDriver manager ======
+2025-08-07 13:57:02,704 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:57:03,421 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:57:04,305 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:57:22,684 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/625732/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 13:57:30,466 - INFO - ====== WebDriver manager ======
+2025-08-07 13:57:31,080 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:57:31,971 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:57:32,548 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:58:04,295 - INFO - ====== WebDriver manager ======
+2025-08-07 13:58:04,917 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:58:05,640 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:58:06,361 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:58:20,379 - INFO - ====== WebDriver manager ======
+2025-08-07 13:58:21,013 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:58:21,900 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:58:22,509 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:58:33,739 - INFO - ====== WebDriver manager ======
+2025-08-07 13:58:34,331 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:58:35,044 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:58:35,763 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:59:07,751 - INFO - ====== WebDriver manager ======
+2025-08-07 13:59:08,335 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:59:09,057 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:59:09,781 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:59:22,593 - INFO - ====== WebDriver manager ======
+2025-08-07 13:59:23,177 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:59:24,072 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:59:24,960 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:59:37,342 - ERROR - Tira error: https://www.tirabeauty.com/product/makeup-revolution-remove-power-lash-volume-mascara---black-10ml-wqj81qyhj67 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 13:59:40,607 - INFO - ====== WebDriver manager ======
+2025-08-07 13:59:41,190 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:59:41,944 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 13:59:42,524 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 13:59:59,656 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/625742/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 14:00:08,430 - INFO - ====== WebDriver manager ======
+2025-08-07 14:00:08,985 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:00:09,701 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:00:10,455 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:00:42,306 - INFO - ====== WebDriver manager ======
+2025-08-07 14:00:42,864 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:00:43,751 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:00:44,471 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:00:57,453 - INFO - ====== WebDriver manager ======
+2025-08-07 14:00:58,007 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:00:58,597 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:00:59,315 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:01:11,773 - ERROR - Tira error: https://www.tirabeauty.com/products/?q=1141338 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 14:01:21,375 - INFO - ====== WebDriver manager ======
+2025-08-07 14:01:21,933 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:01:22,645 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:01:23,360 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:01:36,811 - INFO - ====== WebDriver manager ======
+2025-08-07 14:01:37,361 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:01:38,078 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:01:38,665 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:01:50,966 - ERROR - Tira error: https://www.tirabeauty.com/product/focallure-color-lasting-lip-tint-nu01-2-g-7610385 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 14:01:54,335 - INFO - ====== WebDriver manager ======
+2025-08-07 14:01:54,915 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:01:55,629 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:01:56,518 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:02:14,196 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/625715/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 14:02:22,022 - INFO - ====== WebDriver manager ======
+2025-08-07 14:02:22,626 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:02:23,341 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:02:24,059 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:02:56,468 - INFO - ====== WebDriver manager ======
+2025-08-07 14:02:57,028 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:02:57,605 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:02:58,331 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:03:12,043 - INFO - ====== WebDriver manager ======
+2025-08-07 14:03:12,601 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:03:13,319 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:03:14,040 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:03:31,854 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/625746/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 14:03:39,824 - INFO - ====== WebDriver manager ======
+2025-08-07 14:03:40,380 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:03:41,104 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:03:41,824 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:04:13,212 - INFO - ====== WebDriver manager ======
+2025-08-07 14:04:13,768 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:04:14,486 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:04:15,204 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:04:26,317 - INFO - ====== WebDriver manager ======
+2025-08-07 14:04:26,875 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:04:27,591 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:04:28,304 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:05:00,739 - INFO - ====== WebDriver manager ======
+2025-08-07 14:05:01,291 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:05:01,871 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:05:02,593 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:05:15,191 - INFO - ====== WebDriver manager ======
+2025-08-07 14:05:15,741 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:05:16,317 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:05:17,204 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:05:35,084 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/625753/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 14:05:43,970 - INFO - ====== WebDriver manager ======
+2025-08-07 14:05:44,534 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:05:45,248 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:05:45,969 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:06:04,648 - INFO - ====== WebDriver manager ======
+2025-08-07 14:06:05,203 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:06:05,954 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:06:06,669 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:06:19,720 - INFO - ====== WebDriver manager ======
+2025-08-07 14:06:20,284 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:06:21,172 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:06:22,058 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:06:34,330 - ERROR - Tira error: https://www.tirabeauty.com/products/?q=1151921 — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 14:06:37,632 - INFO - ====== WebDriver manager ======
+2025-08-07 14:06:38,220 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:06:38,937 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:06:39,663 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:06:57,359 - ERROR - Blinkit error: https://blinkit.com/prn/m/prid/625728/ — Message: 
+Stacktrace:
+	GetHandleVerifier [0x0x57ba83+63395]
+	GetHandleVerifier [0x0x57bac4+63460]
+	(No symbol) [0x0x3c2113]
+	(No symbol) [0x0x40a85e]
+	(No symbol) [0x0x40abfb]
+	(No symbol) [0x0x452f92]
+	(No symbol) [0x0x42f3f4]
+	(No symbol) [0x0x4507ba]
+	(No symbol) [0x0x42f1a6]
+	(No symbol) [0x0x3fe7b2]
+	(No symbol) [0x0x3ff654]
+	GetHandleVerifier [0x0x7f8883+2672035]
+	GetHandleVerifier [0x0x7f3cba+2652634]
+	GetHandleVerifier [0x0x5a2bca+223466]
+	GetHandleVerifier [0x0x592cb8+158168]
+	GetHandleVerifier [0x0x59978d+185517]
+	GetHandleVerifier [0x0x583b78+96408]
+	GetHandleVerifier [0x0x583d02+96802]
+	GetHandleVerifier [0x0x56e90a+9770]
+	BaseThreadInitThunk [0x0x75e75d49+25]
+	RtlInitializeExceptionChain [0x0x779bd1ab+107]
+	RtlGetAppContainerNamedObjectPath [0x0x779bd131+561]
+
+2025-08-07 14:07:07,299 - INFO - ====== WebDriver manager ======
+2025-08-07 14:07:07,849 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:07:08,574 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:07:09,291 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:07:49,438 - INFO - ====== WebDriver manager ======
+2025-08-07 14:07:49,996 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:07:50,577 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:07:51,469 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:08:09,689 - INFO - ====== WebDriver manager ======
+2025-08-07 14:08:10,246 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:08:11,135 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:08:11,850 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-07 14:08:29,417 - INFO - ====== WebDriver manager ======
+2025-08-07 14:08:29,979 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:08:30,864 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-07 14:08:31,755 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\138.0.7204.183\chromedriver-win32/chromedriver.exe] found in cache

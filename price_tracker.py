@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import requests
 from dotenv import load_dotenv
 import os
+from datetime import datetime
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -17,7 +18,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # ---------- CONFIG ----------
 INPUT_PATH = "products_new.xlsx"
-OUTPUT_PATH = "Scraped_Product_Prices.xlsx"
+# OUTPUT_PATH = "Scraped_Product_Prices.xlsx"
+OUTPUT_PATH = f"Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
+
 # INPUT_PATH = "/content/drive/My Drive/ScraperProject/products.xlsx"
 # OUTPUT_PATH = "/content/drive/My Drive/ScraperProject/Scraped_Product_Prices.xlsx"
 
@@ -39,13 +42,36 @@ logging.basicConfig(
 
 # ---------- SELENIUM DRIVER ----------
 def init_driver():
+    # options = Options()
+    # if HEADLESS:
+    #     options.add_argument("--headless")
+    #     options.add_argument("--disable-gpu")
+    # options.add_argument("--window-size=1920,1080")
+    # options.add_argument("user-agent=Mozilla/5.0")
+    # options.add_argument("--disable-blink-features=AutomationControlled")
+    # service = ChromeService(ChromeDriverManager().install())
+    # return webdriver.Chrome(service=service, options=options)
+
+    # Updating the driver initialization to use the latest Chrome options and ensure compatibility with CI environments.
     options = Options()
+
+    # Modern headless mode
     if HEADLESS:
-        options.add_argument("--headless")
-        options.add_argument("--disable-gpu")
+        options.add_argument("--headless=new")
+
+    # Stability flags for CI
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
     options.add_argument("user-agent=Mozilla/5.0")
     options.add_argument("--disable-blink-features=AutomationControlled")
+
+    # Point to the Chrome binary installed by GitHub Actions
+    chrome_bin = os.environ.get("CHROME_BIN")
+    if chrome_bin:
+        options.binary_location = chrome_bin
+
     service = ChromeService(ChromeDriverManager().install())
     return webdriver.Chrome(service=service, options=options)
 
@@ -147,6 +173,14 @@ def get_price_blinkit_selenium(url):
     finally:
         driver.quit()
     return None
+def get_price_blinkit_data_selenium(url):
+    html = fetch_page(url)
+    if html:
+        soup = BeautifulSoup(html, "html.parser")
+        tag = soup.select_one(".categories-table")
+        # if tag:
+        #     return tag.text.replace('₹', '').replace(',', '').strip()
+    return None
 
 # ---------- STORE FUNCTION MAP ----------
 STORE_FUNCTIONS = {
@@ -154,7 +188,7 @@ STORE_FUNCTIONS = {
     'Amazon Link': get_price_amazon_selenium,
     'Myntra': get_price_myntra_selenium,
     'Tira': get_price_tira_selenium,
-    'Blinkit': get_price_blinkit_selenium,
+    # 'Blinkit': get_price_blinkit_selenium,
 }
 
 # ---------- MAIN RUNNER ----------
