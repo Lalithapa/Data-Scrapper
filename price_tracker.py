@@ -25,10 +25,14 @@ HEADLESS = True
 load_dotenv(dotenv_path="AUTOMATION_PROXIES")
 
 # --- PROXY CONFIG (for requests, not Selenium) ---
-PROXY_USERNAME = os.getenv("PROXY_USERNAME")
-PROXY_PASSWORD = os.getenv("PROXY_PASSWORD")
-PROXY_HOST = os.getenv("PROXY_HOST")
-PROXY_PORT = os.getenv("PROXY_PORT")
+# PROXY_USERNAME = os.getenv("PROXY_USERNAME")
+# PROXY_PASSWORD = os.getenv("PROXY_PASSWORD")
+# PROXY_HOST = os.getenv("PROXY_HOST")
+# PROXY_PORT = os.getenv("PROXY_PORT")
+PROXY_USERNAME = "hvxkcxys-rotate"
+PROXY_PASSWORD = "smvx89775mmq"
+PROXY_HOST = "p.webshare.io"
+PROXY_PORT = 80
 
 logging.basicConfig(
     filename="scraper.log",
