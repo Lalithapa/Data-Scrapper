@@ -18,18 +18,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # ---------- CONFIG ----------
 INPUT_PATH = "products_new.xlsx"
-# OUTPUT_PATH = "Scraped_Product_Prices.xlsx"
 OUTPUT_PATH = f"Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
-
-# INPUT_PATH = "/content/drive/My Drive/ScraperProject/products.xlsx"
-# OUTPUT_PATH = "/content/drive/My Drive/ScraperProject/Scraped_Product_Prices.xlsx"
-
 HEADLESS = True
 
-# load_dotenv()
+# Load env (created by workflow step)
 load_dotenv(dotenv_path="AUTOMATION_PROXIES")
 
-# --- PROXY CONFIG ---
+# --- PROXY CONFIG (for requests, not Selenium) ---
 PROXY_USERNAME = os.getenv("PROXY_USERNAME")
 PROXY_PASSWORD = os.getenv("PROXY_PASSWORD")
 PROXY_HOST = os.getenv("PROXY_HOST")
@@ -41,22 +36,27 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
+# ---------- DEBUG HELPERS ----------
+DEBUG_DIR = "debug"
+os.makedirs(DEBUG_DIR, exist_ok=True)
+
+def save_debug(driver, name):
+    """Save a screenshot and the current HTML for post-run inspection."""
+    try:
+        driver.save_screenshot(os.path.join(DEBUG_DIR, f"{name}.png"))
+        with open(os.path.join(DEBUG_DIR, f"{name}.html"), "w", encoding="utf-8") as f:
+            f.write(driver.page_source)
+        print(f"[debug] saved {name}.png and {name}.html")
+    except Exception as e:
+        print(f"[debug] save failed for {name}: {e}")
+
 # ---------- SELENIUM DRIVER ----------
 def init_driver():
-    # options = Options()
-    # if HEADLESS:
-    #     options.add_argument("--headless")
-    #     options.add_argument("--disable-gpu")
-    # options.add_argument("--window-size=1920,1080")
-    # options.add_argument("user-agent=Mozilla/5.0")
-    # options.add_argument("--disable-blink-features=AutomationControlled")
-    # service = ChromeService(ChromeDriverManager().install())
-    # return webdriver.Chrome(service=service, options=options)
-
-    # Updating the driver initialization to use the latest Chrome options and ensure compatibility with CI environments.
     options = Options()
+
+    # Classic headless is often more predictable on CI than --headless=new
     if HEADLESS:
-     options.add_argument("--headless")     # <-- classic headless
+        options.add_argument("--headless")
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
@@ -65,6 +65,11 @@ def init_driver():
     options.add_argument("--lang=en-US")
     options.add_argument("user-agent=Mozilla/5.0")
 
+    # DO NOT route Selenium via auth proxy in CI (often breaks). Keep it simple.
+    # If you have an IP-allowlisted proxy (no auth), you could enable:
+    # options.add_argument(f"--proxy-server=http://{PROXY_HOST}:{PROXY_PORT}")
+
+    # Point to Chrome binary installed in GitHub Actions
     chrome_bin = os.environ.get("CHROME_BIN")
     if chrome_bin:
         options.binary_location = chrome_bin
@@ -75,43 +80,27 @@ def init_driver():
     driver.implicitly_wait(2)
     return driver
 
-DEBUG_DIR = "debug"
-os.makedirs(DEBUG_DIR, exist_ok=True)
-
-def save_debug(driver, name):
-    """Save screenshot and HTML of the current page for debugging"""
-    try:
-        driver.save_screenshot(f"{DEBUG_DIR}/{name}.png")
-        with open(f"{DEBUG_DIR}/{name}.html", "w", encoding="utf-8") as f:
-            f.write(driver.page_source)
-    except Exception as e:
-        print("[debug] save failed:", e)
-
-# ---------- REQUESTS HELPER ----------
+# ---------- REQUESTS HELPER (uses your proxy) ----------
 def fetch_page(url):
-    # headers = {"User-Agent": "Mozilla/5.0"}
-    # try:
-    #     response = requests.get(url, headers=headers, timeout=10)
-    #     if response.status_code == 200:
-    #         return response.text
-    # except Exception as e:
-    #     logging.warning(f"Requests failed: {url} — {e}")
-    # return None
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                    "(KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/114.0.0.0 Safari/537.36"),
         "Accept-Language": "en-US,en;q=0.9"
     }
 
-    proxies = {
-        "http": f"http://{PROXY_USERNAME}:{PROXY_PASSWORD}@{PROXY_HOST}:{PROXY_PORT}",
-        "https": f"http://{PROXY_USERNAME}:{PROXY_PASSWORD}@{PROXY_HOST}:{PROXY_PORT}",
-    }
+    proxies = None
+    if PROXY_USERNAME and PROXY_PASSWORD and PROXY_HOST and PROXY_PORT:
+        proxies = {
+            "http": f"http://{PROXY_USERNAME}:{PROXY_PASSWORD}@{PROXY_HOST}:{PROXY_PORT}",
+            "https": f"http://{PROXY_USERNAME}:{PROXY_PASSWORD}@{PROXY_HOST}:{PROXY_PORT}",
+        }
 
     try:
-        response = requests.get(url, headers=headers, proxies=proxies, timeout=10)
+        response = requests.get(url, headers=headers, proxies=proxies, timeout=20)
         if response.status_code == 200:
             return response.text
+        logging.warning(f"Requests non-200 for {url}: {response.status_code}")
     except Exception as e:
         logging.warning(f"Requests failed: {url} — {e}")
     return None
@@ -130,23 +119,30 @@ def get_price_amazon_selenium(url):
     driver = init_driver()
     try:
         driver.get(url)
-        wait = WebDriverWait(driver, 10)
-        for sel in [
+        wait = WebDriverWait(driver, 15)
+
+        selectors = [
             (By.CSS_SELECTOR, "#apex_desktop .a-price .a-offscreen"),
             (By.CSS_SELECTOR, "#corePrice_feature_div .a-offscreen"),
             (By.CSS_SELECTOR, ".a-price .a-offscreen"),
-            (By.ID, "priceblock_ourprice"),
-            (By.ID, "priceblock_dealprice"),
-        ]:
+            (By.ID, "priceblock_ourprice"),   # legacy
+            (By.ID, "priceblock_dealprice"),  # legacy
+        ]
+
+        for by, sel in selectors:
             try:
-                price = wait.until(EC.presence_of_element_located(sel)).text
-                save_debug(driver, "amazon_success")  # 📌 Save debug
-                return price.replace('₹', '').replace(',', '').strip()
-            except:
+                el = wait.until(EC.presence_of_element_located((by, sel)))
+                txt = el.text.strip()
+                if txt:
+                    save_debug(driver, "amazon_success")   # debug artifact
+                    return txt.replace('₹', '').replace(',', '').strip()
+            except Exception:
                 continue
+
+        save_debug(driver, "amazon_no_price")
     except Exception as e:
         logging.error(f"Amazon error: {url} — {e}")
-        save_debug(driver, "amazon_error")  # 📌 Save debug
+        save_debug(driver, "amazon_error")
     finally:
         driver.quit()
     return None
@@ -155,14 +151,24 @@ def get_price_tira_selenium(url):
     driver = init_driver()
     try:
         driver.get(url)
-        wait = WebDriverWait(driver, 10)
-        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".product-cost-container #item_price")))
-        save_debug(driver, "tire_success")  # 📌 Save debug
-        return el.text.replace('₹', '').replace(',', '').strip()
+        wait = WebDriverWait(driver, 15)
+        selectors = [
+            (By.CSS_SELECTOR, ".product-cost-container #item_price"),
+            (By.CSS_SELECTOR, "#item_price"),
+        ]
+        for by, sel in selectors:
+            try:
+                el = wait.until(EC.presence_of_element_located((by, sel)))
+                txt = el.text.strip()
+                if txt:
+                    save_debug(driver, "tira_success")
+                    return txt.replace('₹', '').replace(',', '').strip()
+            except Exception:
+                continue
+        save_debug(driver, "tira_no_price")
     except Exception as e:
         logging.error(f"Tira error: {url} — {e}")
-        save_debug(driver, "tira_error")  # 📌 Save debug
-
+        save_debug(driver, "tira_error")
     finally:
         driver.quit()
     return None
@@ -171,62 +177,57 @@ def get_price_myntra_selenium(url):
     driver = init_driver()
     try:
         driver.get(url)
-        wait = WebDriverWait(driver, 10)
-        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".pdp-discount-container span.pdp-price strong")))
-        save_debug(driver, "myntra_success")  # 📌 Save debug
-        return el.text.replace('₹', '').replace(',', '').strip()
+        wait = WebDriverWait(driver, 15)
+        selectors = [
+            (By.CSS_SELECTOR, ".pdp-price .pdp-discount-price"),
+            (By.CSS_SELECTOR, ".pdp-price .pdp-offers-price"),
+            (By.CSS_SELECTOR, ".pdp-discount-container span.pdp-price strong"),  # old
+        ]
+        for by, sel in selectors:
+            try:
+                el = wait.until(EC.presence_of_element_located((by, sel)))
+                txt = el.text.strip()
+                if txt:
+                    save_debug(driver, "myntra_success")
+                    return txt.replace('₹', '').replace(',', '').strip()
+            except Exception:
+                continue
+        save_debug(driver, "myntra_no_price")
     except Exception as e:
         logging.error(f"Myntra error: {url} — {e}")
-        save_debug(driver, "myntra_error")  # 📌 Save debug
-
+        save_debug(driver, "myntra_error")
     finally:
         driver.quit()
     return None
 
-def get_price_blinkit_selenium(url):
-    driver = init_driver()
-    try:
-        driver.get(url)
-        wait = WebDriverWait(driver, 10)
-        el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".tw-flex.tw-items-center.tw-gap-1 .tw-text-400.tw-font-bold")))
-        return el.text.replace('₹', '').replace(',', '').strip()
-    except Exception as e:
-        logging.error(f"Blinkit error: {url} — {e}")
-    finally:
-        driver.quit()
-    return None
 def get_price_blinkit_data_selenium(url):
+    # Keeping your requests-based Blinkit placeholder
     html = fetch_page(url)
     if html:
         soup = BeautifulSoup(html, "html.parser")
         tag = soup.select_one(".categories-table")
-        # if tag:
-        #     return tag.text.replace('₹', '').replace(',', '').strip()
+        # Implement proper selector if Blinkit page shows data without login/geo gate
     return None
 
 # ---------- STORE FUNCTION MAP ----------
 STORE_FUNCTIONS = {
-    'Nykaa Link': get_price_nykaa,
-    'Amazon Link': get_price_amazon_selenium,
-    'Myntra': get_price_myntra_selenium,
-    'Tira': get_price_tira_selenium,
-    # 'Blinkit': get_price_blinkit_selenium,
+    'Nykaa Link': get_price_nykaa,            # requests
+    'Amazon Link': get_price_amazon_selenium, # selenium
+    'Myntra': get_price_myntra_selenium,      # selenium
+    'Tira': get_price_tira_selenium,          # selenium
+    # 'Blinkit': get_price_blinkit_selenium,  # often needs account/geo; disabled
 }
 
 # ---------- MAIN RUNNER ----------
 def main():
     df = pd.read_excel(INPUT_PATH)
     output_df = df.copy()
-    
-    # idx = 0  # Only run for the first row
-    # row = output_df.iloc[idx]
 
     for idx, row in output_df.iterrows():
         sku = row.get("Sku Code", f"Row {idx+1}")
         print(f"\n🔍 {sku}")
         for col, scraper_func in STORE_FUNCTIONS.items():
             url = row.get(col)
-            # print(f" This  {url}")
             if isinstance(url, str) and url.startswith("http"):
                 print(f"  ⏳ {col} → ", end="")
                 try:
