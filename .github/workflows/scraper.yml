@@ -1,0 +1,63 @@
+name: Daily Price Scraper (Selenium)
+
+on:
+  schedule:
+    # 17:50 IST.
+   - cron: "20 12 * * *"
+  workflow_dispatch: {}  # allow manual run for testing
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Install Google Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget gnupg
+          wget -qO - https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /usr/share/keyrings/google-linux-signing-keyring.gpg
+          echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-linux-signing-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          google-chrome --version || true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Create AUTOMATION_PROXIES from secrets
+        run: |
+          cat > AUTOMATION_PROXIES << 'EOF'
+          PROXY_USERNAME=${{ secrets.PROXY_USERNAME }}
+          PROXY_PASSWORD=${{ secrets.PROXY_PASSWORD }}
+          PROXY_HOST=${{ secrets.PROXY_HOST }}
+          PROXY_PORT=${{ secrets.PROXY_PORT }}
+          EOF
+
+      - name: Show current UTC and IST (for sanity)
+        run: |
+          echo "UTC now:  $(date -u)"
+          echo "IST now:  $(TZ='Asia/Kolkata' date)"
+
+      - name: Run scraper
+        env:
+          CHROME_BIN: /usr/bin/google-chrome
+        run: |
+          python price_tracker.py
+
+      - name: Upload Excel result
+        uses: actions/upload-artifact@v4
+        with:
+          name: Scraped_Product_Prices
+          path: |
+            Scraped_Product_Prices*.xlsx
+          if-no-files-found: warn
