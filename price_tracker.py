@@ -233,8 +233,7 @@ def get_price_myntra_selenium(url):
 
         wait = WebDriverWait(driver, 20)
         selectors = [
-            (By.CSS_SELECTOR, ".pdp-price .pdp-discount-price"),
-            (By.CSS_SELECTOR, "span.pdp-price span"),
+            (By.CSS_SELECTOR, "span.pdp-price strong"),
             (By.CSS_SELECTOR, ".pdp-discount-container span.pdp-price strong"),  # old
         ]
         for by, sel in selectors:
