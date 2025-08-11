@@ -273,14 +273,13 @@ STORE_FUNCTIONS = {
     'Amazon Link': get_price_amazon_selenium, # selenium
     'Myntra': get_price_myntra_selenium,      # selenium
     'Tira': get_price_tira_selenium,          # selenium
-    # 'Blinkit': get_price_blinkit_selenium,
 }
 
 # ---------- MAIN RUNNER ----------
 def main():
     df = pd.read_excel(INPUT_PATH)
     output_df = df.copy()
-
+    print("Columns: test to check number of list", list(df.columns))
     for idx, row in output_df.iterrows():
         sku = row.get("Sku Code", f"Row {idx+1}")
         print(f"\n🔍 {sku}")

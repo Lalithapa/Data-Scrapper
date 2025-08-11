@@ -51,3 +51,94 @@ jobs:
           path: |
             Scraped_Product_Prices*.xlsx
           if-no-files-found: warn
+2025-08-11 13:09:11,493 - INFO - ====== WebDriver manager ======
+2025-08-11 13:09:12,231 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:09:12,851 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:09:13,460 - INFO - There is no [win64] chromedriver "139.0.7258.66" for browser google-chrome "139.0.7258" in cache
+2025-08-11 13:09:13,461 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:09:15,125 - INFO - WebDriver version 139.0.7258.66 selected
+2025-08-11 13:09:15,128 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.66/win32/chromedriver-win32.zip
+2025-08-11 13:09:15,128 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/139.0.7258.66/win32/chromedriver-win32.zip
+2025-08-11 13:09:15,893 - INFO - Driver downloading response is 200
+2025-08-11 13:09:18,418 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:09:27,173 - INFO - Driver has been saved in cache [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66]
+2025-08-11 13:10:05,575 - INFO - ====== WebDriver manager ======
+2025-08-11 13:10:06,466 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:10:06,963 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:10:07,568 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 13:11:26,212 - INFO - ====== WebDriver manager ======
+2025-08-11 13:11:26,808 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:11:27,445 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:11:28,078 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 13:12:23,259 - INFO - ====== WebDriver manager ======
+2025-08-11 13:12:23,846 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:12:24,461 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:12:25,073 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 13:13:04,870 - INFO - ====== WebDriver manager ======
+2025-08-11 13:13:05,472 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:13:05,961 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:13:06,570 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 13:14:25,216 - INFO - ====== WebDriver manager ======
+2025-08-11 13:14:25,825 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:14:26,435 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:14:26,929 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 13:15:15,816 - INFO - ====== WebDriver manager ======
+2025-08-11 13:15:16,393 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:15:17,005 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 13:15:17,757 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:14:25,624 - INFO - ====== WebDriver manager ======
+2025-08-11 15:14:26,447 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:14:27,210 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:14:27,702 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:15:05,596 - INFO - ====== WebDriver manager ======
+2025-08-11 15:15:06,255 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:15:06,857 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:15:07,342 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:16:25,831 - INFO - ====== WebDriver manager ======
+2025-08-11 15:16:26,486 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:16:27,090 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:16:27,692 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:17:22,220 - INFO - ====== WebDriver manager ======
+2025-08-11 15:17:22,919 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:17:23,403 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:17:24,011 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:18:01,713 - INFO - ====== WebDriver manager ======
+2025-08-11 15:18:02,424 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:18:03,060 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:18:03,668 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:19:23,062 - INFO - ====== WebDriver manager ======
+2025-08-11 15:19:23,722 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:19:24,213 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:19:24,823 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:20:12,055 - INFO - ====== WebDriver manager ======
+2025-08-11 15:20:12,721 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:20:13,210 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:20:13,698 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:20:54,003 - INFO - ====== WebDriver manager ======
+2025-08-11 15:20:54,743 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:20:55,492 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:20:55,989 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:22:17,298 - INFO - patching driver executable C:\Users\lalit\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-08-11 15:22:20,237 - INFO - setting properties for headless
+2025-08-11 15:22:20,365 - INFO - ensuring close
+2025-08-11 15:37:28,862 - INFO - ====== WebDriver manager ======
+2025-08-11 15:37:29,554 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:37:29,745 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:37:29,903 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:38:07,319 - INFO - ====== WebDriver manager ======
+2025-08-11 15:38:07,970 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:38:08,138 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:38:08,303 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:38:45,301 - INFO - ====== WebDriver manager ======
+2025-08-11 15:38:46,003 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:38:46,175 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:38:46,334 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:39:28,042 - WARNING - Requests non-200 for https://www.nykaa.com/focallure-airy-velvet-lipcream/p/17516493?productId=17516493&pps=1&skuId=17516458: 403
+2025-08-11 15:39:29,274 - INFO - ====== WebDriver manager ======
+2025-08-11 15:39:29,895 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:39:30,057 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:39:30,218 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
+2025-08-11 15:40:07,272 - INFO - ====== WebDriver manager ======
+2025-08-11 15:40:07,977 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:40:08,150 - INFO - Get LATEST chromedriver version for google-chrome
+2025-08-11 15:40:08,317 - INFO - Driver [C:\Users\lalit\.wdm\drivers\chromedriver\win64\139.0.7258.66\chromedriver-win32/chromedriver.exe] found in cache
