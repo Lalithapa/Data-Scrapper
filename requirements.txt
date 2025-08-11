@@ -2,6 +2,8 @@ pandas
 beautifulsoup4
 requests
 selenium
+selenium-stealth
+undetected-chromedriver
 webdriver-manager
 openpyxl
 python-dotenv
