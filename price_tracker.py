@@ -25,20 +25,19 @@ HEADLESS = True
 load_dotenv(dotenv_path="AUTOMATION_PROXIES")
 
 # --- PROXY CONFIG (for requests, not Selenium) ---
-# PROXY_USERNAME = os.getenv("PROXY_USERNAME")
-# PROXY_PASSWORD = os.getenv("PROXY_PASSWORD")
-# PROXY_HOST = os.getenv("PROXY_HOST")
-# PROXY_PORT = os.getenv("PROXY_PORT")
-PROXY_USERNAME = "hvxkcxys-rotate"
-PROXY_PASSWORD = "smvx89775mmq"
-PROXY_HOST = "p.webshare.io"
-PROXY_PORT = 80
+PROXY_USERNAME = os.getenv("PROXY_USERNAME")
+PROXY_PASSWORD = os.getenv("PROXY_PASSWORD")
+PROXY_HOST = os.getenv("PROXY_HOST")
+PROXY_PORT = os.getenv("PROXY_PORT")
 
 logging.basicConfig(
     filename="scraper.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
+
+print("[proxy] using proxies:",
+      bool(PROXY_USERNAME and PROXY_PASSWORD and PROXY_HOST and PROXY_PORT))
 
 # ---------- DEBUG HELPERS ----------
 DEBUG_DIR = "debug"
@@ -53,6 +52,34 @@ def save_debug(driver, name):
         print(f"[debug] saved {name}.png and {name}.html")
     except Exception as e:
         print(f"[debug] save failed for {name}: {e}")
+
+def try_accept_common_banners(driver):
+    """Best-effort accept cookies/consent so price elements can render."""
+    # Add more site-specific locators as you discover them in debug HTML
+    candidates = [
+        (By.ID, "sp-cc-accept"),  # Amazon EU cookie banner
+        (By.XPATH, "//button[contains(., 'Accept All')]"),
+        (By.XPATH, "//button[contains(., 'Accept all')]"),
+        (By.XPATH, "//button[contains(., 'Accept')]"),
+        (By.XPATH, "//button[contains(., 'I agree')]"),
+        (By.CSS_SELECTOR, "button[aria-label='Accept']"),
+    ]
+    for by, sel in candidates:
+        try:
+            btn = WebDriverWait(driver, 3).until(EC.element_to_be_clickable((by, sel)))
+            btn.click()
+            time.sleep(0.3)
+            break
+        except Exception:
+            pass
+
+def gentle_scroll(driver):
+    """Nudge the page to trigger lazy content in headless."""
+    try:
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight/3);")
+        time.sleep(0.7)
+    except Exception:
+        pass
 
 # ---------- SELENIUM DRIVER ----------
 def init_driver():
@@ -82,6 +109,22 @@ def init_driver():
     driver = webdriver.Chrome(service=service, options=options)
     driver.set_page_load_timeout(45)
     driver.implicitly_wait(2)
+
+    # ------ ADD THESE CDP OVERRIDES AFTER DRIVER IS CREATED ------
+    try:
+        # Pretend we're in India + English
+        driver.execute_cdp_cmd("Emulation.setLocaleOverride", {"locale": "en-IN"})
+        driver.execute_cdp_cmd("Emulation.setTimezoneOverride", {"timezoneId": "Asia/Kolkata"})
+        driver.execute_cdp_cmd("Network.setUserAgentOverride", {
+            "userAgent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                          "AppleWebKit/537.36 (KHTML, like Gecko) "
+                          "Chrome/114.0.0.0 Safari/537.36"),
+            "acceptLanguage": "en-IN,en;q=0.9"
+        })
+    except Exception as e:
+        print("[debug] CDP override failed:", e)
+    # -------------------------------------------------------------
+
     return driver
 
 # ---------- REQUESTS HELPER (uses your proxy) ----------
@@ -123,12 +166,12 @@ def get_price_amazon_selenium(url):
     driver = init_driver()
     try:
         driver.get(url)
-        wait = WebDriverWait(driver, 15)
+        try_accept_common_banners(driver)
+        gentle_scroll(driver)
 
+        wait = WebDriverWait(driver, 20)
         selectors = [
-            (By.CSS_SELECTOR, "#apex_desktop .a-price .a-offscreen"),
-            (By.CSS_SELECTOR, "#corePrice_feature_div .a-offscreen"),
-            (By.CSS_SELECTOR, ".a-price .a-offscreen"),
+            (By.CSS_SELECTOR, "#centerCol .a-price-whole"),
             (By.ID, "priceblock_ourprice"),   # legacy
             (By.ID, "priceblock_dealprice"),  # legacy
         ]
@@ -138,7 +181,7 @@ def get_price_amazon_selenium(url):
                 el = wait.until(EC.presence_of_element_located((by, sel)))
                 txt = el.text.strip()
                 if txt:
-                    save_debug(driver, "amazon_success")   # debug artifact
+                    save_debug(driver, "amazon_success")
                     return txt.replace('₹', '').replace(',', '').strip()
             except Exception:
                 continue
@@ -155,8 +198,12 @@ def get_price_tira_selenium(url):
     driver = init_driver()
     try:
         driver.get(url)
-        wait = WebDriverWait(driver, 15)
+        try_accept_common_banners(driver)
+        gentle_scroll(driver)
+
+        wait = WebDriverWait(driver, 20)
         selectors = [
+            (By.CSS_SELECTOR, "span.current-amount),
             (By.CSS_SELECTOR, ".product-cost-container #item_price"),
             (By.CSS_SELECTOR, "#item_price"),
         ]
@@ -181,10 +228,13 @@ def get_price_myntra_selenium(url):
     driver = init_driver()
     try:
         driver.get(url)
-        wait = WebDriverWait(driver, 15)
+        try_accept_common_banners(driver)
+        gentle_scroll(driver)
+
+        wait = WebDriverWait(driver, 20)
         selectors = [
             (By.CSS_SELECTOR, ".pdp-price .pdp-discount-price"),
-            (By.CSS_SELECTOR, ".pdp-price .pdp-offers-price"),
+            (By.CSS_SELECTOR, "span.pdp-price span"),
             (By.CSS_SELECTOR, ".pdp-discount-container span.pdp-price strong"),  # old
         ]
         for by, sel in selectors:
@@ -205,12 +255,11 @@ def get_price_myntra_selenium(url):
     return None
 
 def get_price_blinkit_data_selenium(url):
-    # Keeping your requests-based Blinkit placeholder
     html = fetch_page(url)
     if html:
         soup = BeautifulSoup(html, "html.parser")
         tag = soup.select_one(".categories-table")
-        # Implement proper selector if Blinkit page shows data without login/geo gate
+        # Implement proper selector if Blinkit shows data without login/geo gate
     return None
 
 # ---------- STORE FUNCTION MAP ----------
@@ -219,7 +268,7 @@ STORE_FUNCTIONS = {
     'Amazon Link': get_price_amazon_selenium, # selenium
     'Myntra': get_price_myntra_selenium,      # selenium
     'Tira': get_price_tira_selenium,          # selenium
-    # 'Blinkit': get_price_blinkit_selenium,  # often needs account/geo; disabled
+    # 'Blinkit': get_price_blinkit_selenium,
 }
 
 # ---------- MAIN RUNNER ----------
