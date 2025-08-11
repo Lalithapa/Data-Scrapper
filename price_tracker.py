@@ -203,7 +203,7 @@ def get_price_tira_selenium(url):
 
         wait = WebDriverWait(driver, 20)
         selectors = [
-            (By.CSS_SELECTOR, "span.current-amount),
+            (By.CSS_SELECTOR, "span.current-amount"),
             (By.CSS_SELECTOR, ".product-cost-container #item_price"),
             (By.CSS_SELECTOR, "#item_price"),
         ]
