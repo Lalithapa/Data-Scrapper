@@ -281,7 +281,7 @@ STORE_FUNCTIONS = {
 def main():
     df = pd.read_excel(INPUT_PATH)
     output_df = df.copy()
-    print("Columns: test to check number of list", list(df.columns))
+    # print("Columns: test to check number of list", list(df.columns))
     for idx, row in output_df.iterrows():
         sku = row.get("Sku Code", f"Row {idx+1}")
         print(f"\n🔍 {sku}")
@@ -290,8 +290,8 @@ def main():
             if isinstance(url, str) and url.startswith("http"):
                 print(f"  ⏳ {col} → ", end="")
                 try:
-                    price = 200
-                    # price = scraper_func(url)
+                    # price = 200
+                    price = scraper_func(url)
                     if price:
                         print(f"₹{price}")
                         output_df.at[idx, col] = price
@@ -304,7 +304,7 @@ def main():
                     output_df.at[idx, col] = "Error"
                 time.sleep(random.uniform(1, 2))
 
-    # output_df.to_excel(OUTPUT_PATH, index=False)
+    output_df.to_excel(OUTPUT_PATH, index=False)
     print(f"\n✅ Scraping complete! Results saved to: {OUTPUT_PATH}")
 
 if __name__ == "__main__":
