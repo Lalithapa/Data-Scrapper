@@ -17,8 +17,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 # ---------- CONFIG ----------
-INPUT_PATH = "products_new.xlsx"
-OUTPUT_PATH = f"Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
+INPUT_PATH = "/content/drive/MyDrive/ScraperProject/products_new.xlsx"
+OUTPUT_PATH = f"/content/drive/MyDrive/ScraperProject/Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
 HEADLESS = True
 
 # Load env (created by workflow step)
@@ -288,7 +288,8 @@ def main():
             if isinstance(url, str) and url.startswith("http"):
                 print(f"  ⏳ {col} → ", end="")
                 try:
-                    price = scraper_func(url)
+                    price = 200
+                    # price = scraper_func(url)
                     if price:
                         print(f"₹{price}")
                         output_df.at[idx, col] = price
@@ -304,141 +305,5 @@ def main():
     output_df.to_excel(OUTPUT_PATH, index=False)
     print(f"\n✅ Scraping complete! Results saved to: {OUTPUT_PATH}")
 
-if __name__ == "__main__":
-    main()
-
-
-
-import time
-import random
-import pandas as pd
-import undetected_chromedriver as uc
-from selenium_stealth import stealth
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
-
-# =========================
-# STEALTH DRIVER SETUP
-# =========================
-def get_stealth_driver(proxy=None, headless=True):
-    options = uc.ChromeOptions()
-
-    # Basic options
-    if headless:
-        options.add_argument("--headless=new")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--disable-infobars")
-    options.add_argument("--start-maximized")
-    options.add_argument("--disable-extensions")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-
-    # Optional proxy
-    if proxy:
-        options.add_argument(f'--proxy-server={proxy}')
-
-    driver = uc.Chrome(options=options, use_subprocess=True)
-
-    # Stealth mode
-    stealth(driver,
-            languages=["en-US", "en"],
-            vendor="Google Inc.",
-            platform="Win32",
-            webgl_vendor="Intel Inc.",
-            renderer="Intel Iris OpenGL Engine",
-            fix_hairline=True,
-            )
-
-    return driver
-
-# =========================
-# HUMAN BEHAVIOR HELPERS
-# =========================
-def human_delay(min_s=1.5, max_s=3.5):
-    time.sleep(random.uniform(min_s, max_s))
-
-def human_scroll(driver):
-    for _ in range(random.randint(1, 3)):
-        driver.execute_script(f"window.scrollBy(0, {random.randint(200, 600)});")
-        human_delay()
-
-def human_hover(driver, element):
-    ActionChains(driver).move_to_element(element).perform()
-    human_delay()
-
-# =========================
-# SCRAPER FUNCTIONS
-# =========================
-def fetch_amazon_price(driver, url):
-    driver.get(url)
-    human_delay()
-    human_scroll(driver)
-    try:
-        # Amazon often uses this ID, but fallback is needed
-        try:
-            price_el = driver.find_element(By.ID, "#centerCol .a-price-whole")
-        except:
-            price_el = driver.find_element(By.ID, "priceblock_dealprice")
-        return price_el.text.strip()
-    except:
-        return "Price not found / Blocked"
-
-def fetch_myntra_price(driver, url):
-    driver.get(url)
-    human_delay()
-    human_scroll(driver)
-    try:
-        price_el = driver.find_element(By.XPATH, '//span[contains(@class,"pdp-price strong")]')
-        return price_el.text.strip()
-    except:
-        return "Price not found"
-
-def fetch_tira_price(driver, url):
-    driver.get(url)
-    human_delay()
-    human_scroll(driver)
-    try:
-        price_el = driver.find_element(By.XPATH, '//span[contains(@class,"span.current-amount")]')  
-        return price_el.text.strip()
-    except:
-        return "Price not found"
-
-# =========================
-# MAIN TRACKER
-# =========================
-def main():
-    # Load products from Excel
-    df = pd.read_excel("products_new.xlsx")
-
-    # Add output column
-    df["Price"] = None
-
-    # Optional: proxy if needed
-    proxy = None
-    driver = get_stealth_driver(proxy=proxy, headless=True)
-
-    for idx, row in df.iterrows():
-        url = row["URL"]  # Ensure your Excel has a 'URL' column
-        if "amazon" in url:
-            price = fetch_amazon_price(driver, url)
-        elif "myntra" in url:
-            price = fetch_myntra_price(driver, url)
-        elif "tirabeauty" in url:
-            price = fetch_tira_price(driver, url)
-        else:
-            price = "Unsupported site"
-        
-        df.at[idx, "Price"] = price
-        print(f"[{idx+1}/{len(df)}] {url} → {price}")
-
-    driver.quit()
-
-    # Save results
-    df.to_excel("Scraped_Product_Prices.xlsx", index=False)
-    print("\n✅ Scraping complete. Saved to Scraped_Product_Prices.xlsx")
-
-# =========================
-# ENTRY POINT
-# =========================
 if __name__ == "__main__":
     main()
