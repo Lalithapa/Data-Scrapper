@@ -17,8 +17,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 # ---------- CONFIG ----------
-INPUT_PATH = "/content/drive/MyDrive/ScraperProject/products_new.xlsx"
-OUTPUT_PATH = f"/content/drive/MyDrive/ScraperProject/Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
+# INPUT_PATH = "/content/drive/MyDrive/ScraperProject/products_new.xlsx"
+# OUTPUT_PATH = f"/content/drive/MyDrive/ScraperProject/Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
+INPUT_PATH = "products_new.xlsx"
+OUTPUT_PATH = f"Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
 HEADLESS = True
 
 # Load env (created by workflow step)
@@ -302,7 +304,7 @@ def main():
                     output_df.at[idx, col] = "Error"
                 time.sleep(random.uniform(1, 2))
 
-    output_df.to_excel(OUTPUT_PATH, index=False)
+    # output_df.to_excel(OUTPUT_PATH, index=False)
     print(f"\n✅ Scraping complete! Results saved to: {OUTPUT_PATH}")
 
 if __name__ == "__main__":
