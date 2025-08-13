@@ -168,7 +168,7 @@ MIT License. Free to use for personal and commercial use.
 
 | Sku Code | Nykaa Link | Amazon Link | Myntra | Tira | Blinkit |
 |----------|------------|-------------|--------|------|---------|
-| GC990    | ₹716       | ₹715        | N/A    | N/A  | N/A     |
+| GC990    | ₹716       | ₹715        |   ₹715  | ₹715 | ₹715    |
 
 ---
 
