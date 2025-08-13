@@ -2,8 +2,8 @@ name: Daily Price Scraper (Selenium)
 
 on:
   schedule:
-    # 1PM IST.
-   - cron: "30 7 * * *"
+     # 11:30 AM IST → 06:00 UTC
+    - cron: "0 6 * * *"
   workflow_dispatch: {}  # allow manual run for testing
 
 jobs:
