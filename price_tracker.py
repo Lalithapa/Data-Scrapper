@@ -19,7 +19,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # ---------- CONFIG ----------
 # INPUT_PATH = "/content/drive/MyDrive/ScraperProject/products_new.xlsx"
 # OUTPUT_PATH = f"/content/drive/MyDrive/ScraperProject/Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
-INPUT_PATH = "products.xlsx"
+INPUT_PATH = "updated_products.xlsx"
 OUTPUT_PATH = f"Scraped_Product_Prices_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
 HEADLESS = True
 
